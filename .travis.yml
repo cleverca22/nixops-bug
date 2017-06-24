@@ -1,7 +1,6 @@
 language: nix
 
 install:
-  - sudo echo hello
   - nix-env -iA nixopsUnstable -f '<nixpkgs>' -Q
 script:
   - nixops --version
